@@ -30,7 +30,14 @@ class Program
             Console.WriteLine(i);
         }
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
-        
+        string reponse;
+        do 
+        {
+            Console.WriteLine("Dis oui pour arreter ceci");
+            reponse = Console.ReadLine() ?? "";
+        } 
+        while (reponse != "oui");
+        Console.WriteLine("Boucle terminée !");
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
